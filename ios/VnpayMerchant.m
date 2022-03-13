@@ -32,10 +32,10 @@ RCT_EXPORT_METHOD(show:(NSString *)scheme
         CGFloat height = [UIScreen mainScreen].bounds.size.height;
         
         self.window1 = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, width, height)];
-        self.window1.backgroundColor = UIColor.clearColor;
+        self.window1.backgroundColor = UIColor.redColor;
         self.window1.windowLevel = UIWindowLevelAlert;
         self.window1.rootViewController = [[UIViewController alloc] init];
-        self.window1.rootViewController.view.backgroundColor = UIColor.clearColor;
+        self.window1.rootViewController.view.backgroundColor = UIColor.redColor;
         [self.window1 makeKeyAndVisible];
         
         [CallAppInterface setHomeViewController:self.window1.rootViewController];
